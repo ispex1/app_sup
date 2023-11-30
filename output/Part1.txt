@@ -1,0 +1,162 @@
+Training set has 1564 samples.
+Testing set has 392 samples.
+==== Features train ====
+        AGEP  COW  SCHL  MAR    OCCP   POBP  RELP  WKHP  SEX  RAC1P
+117087  48.0  1.0  16.0  1.0  9130.0    6.0   9.0  40.0  1.0    1.0
+139056  26.0  1.0  21.0  5.0  3160.0    6.0   0.0  40.0  2.0    1.0
+181539  36.0  7.0  16.0  1.0   220.0  163.0   0.0  40.0  1.0    1.0
+45110   33.0  6.0  22.0  5.0  4230.0  312.0  12.0  30.0  2.0    1.0
+16316   19.0  1.0  16.0  5.0  9620.0    6.0   2.0   8.0  1.0    1.0
+==== Label train ====
+        PINCP
+117087  False
+139056  False
+181539   True
+45110   False
+16316   False
+
+==== SVM ====
+
+==== Results Cross Validation ====
+Cross validation score:  [0.74760383 0.72204473 0.71565495 0.70607029 0.71794872]
+Cross validation score mean:  0.7218645039731302
+
+==== Quality of the model ====
+Training time (model.fit) :  0.2801330089569092 s
+Accuracy:  0.7040816326530612
+Classification report: 
+
+               precision    recall  f1-score   support
+
+       False       0.70      0.81      0.76       220
+        True       0.70      0.56      0.63       172
+
+    accuracy                           0.70       392
+   macro avg       0.70      0.69      0.69       392
+weighted avg       0.70      0.70      0.70       392
+ 
+
+Confusion matrix: 
+
+ [[179  41]
+ [ 75  97]] 
+
+
+==== GridSearchCV ====
+Best parameters:  {'C': 1000, 'kernel': 'rbf'}
+Best score:  0.7532030801998852
+Best estimator:  SVC(C=1000, probability=True)
+Best index:  6
+Scorer:  <function _passthrough_scorer at 0x7fba6bae0720>
+Refit time:  0.6239590644836426
+Score:  0.7219387755102041
+
+==== RandomForest ====
+
+==== Results Cross Validation ====
+Cross validation score:  [0.79233227 0.79233227 0.80511182 0.76038339 0.79807692]
+Cross validation score mean:  0.7896473334971738
+
+==== Quality of the model ====
+Training time (model.fit) :  0.1826317310333252 s
+Accuracy:  0.7602040816326531
+Classification report: 
+
+               precision    recall  f1-score   support
+
+       False       0.78      0.80      0.79       220
+        True       0.74      0.70      0.72       172
+
+    accuracy                           0.76       392
+   macro avg       0.76      0.75      0.76       392
+weighted avg       0.76      0.76      0.76       392
+ 
+
+Confusion matrix: 
+
+ [[177  43]
+ [ 51 121]] 
+
+
+==== GridSearchCV ====
+Best parameters:  {'max_depth': 10, 'n_estimators': 100}
+Best score:  0.7941242729581388
+Best estimator:  RandomForestClassifier(max_depth=10)
+Best index:  4
+Scorer:  <function _passthrough_scorer at 0x7fba6bae0720>
+Refit time:  0.14470672607421875
+Score:  0.7678571428571429
+
+==== AdaBoost ====
+
+==== Results Cross Validation ====
+Cross validation score:  [0.83386581 0.79233227 0.8115016  0.75079872 0.77564103]
+Cross validation score mean:  0.7928278856393872
+
+==== Quality of the model ====
+Training time (model.fit) :  0.06448602676391602 s
+Accuracy:  0.798469387755102
+Classification report: 
+
+               precision    recall  f1-score   support
+
+       False       0.82      0.82      0.82       220
+        True       0.77      0.77      0.77       172
+
+    accuracy                           0.80       392
+   macro avg       0.80      0.80      0.80       392
+weighted avg       0.80      0.80      0.80       392
+ 
+
+Confusion matrix: 
+
+ [[181  39]
+ [ 40 132]] 
+
+
+==== GridSearchCV ====
+Best parameters:  {'learning_rate': 0.1, 'n_estimators': 1000}
+Best score:  0.7953837961825181
+Best estimator:  AdaBoostClassifier(learning_rate=0.1, n_estimators=1000)
+Best index:  2
+Scorer:  <function _passthrough_scorer at 0x7fba6bae0720>
+Refit time:  1.217487096786499
+Score:  0.7857142857142857
+
+==== GradientBoosting ====
+
+==== Results Cross Validation ====
+Cross validation score:  [0.83067093 0.80830671 0.81469649 0.76038339 0.80128205]
+Cross validation score mean:  0.8030679118538544
+
+==== Quality of the model ====
+Training time (model.fit) :  0.15412616729736328 s
+Accuracy:  0.7857142857142857
+Classification report: 
+
+               precision    recall  f1-score   support
+
+       False       0.80      0.83      0.81       220
+        True       0.77      0.73      0.75       172
+
+    accuracy                           0.79       392
+   macro avg       0.78      0.78      0.78       392
+weighted avg       0.79      0.79      0.78       392
+ 
+
+Confusion matrix: 
+
+ [[183  37]
+ [ 47 125]] 
+
+
+==== GridSearchCV ====
+Best parameters:  {'learning_rate': 1, 'max_depth': 10, 'n_estimators': 100}
+Best score:  0.7794134512984353
+Best estimator:  GradientBoostingClassifier(learning_rate=1, max_depth=10)
+Best index:  13
+Scorer:  <function _passthrough_scorer at 0x7fba6bae0720>
+Refit time:  0.33333754539489746
+Score:  0.7806122448979592
+
+The best score are ae
