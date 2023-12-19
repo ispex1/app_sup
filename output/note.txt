@@ -3,8 +3,10 @@
         "Gradient Boosting": sklearn.ensemble.GradientBoostingClassifier(learning_rate=1, max_depth=10,  n_estimators=100),
         "Ada Boost": sklearn.ensemble.AdaBoostClassifier(learning_rate=1, n_estimators=1000)}
 
+###################################### RESULT FOR EQUITY METRICS OF SEX WITH SEX FEATURE ###########################################################################
 
-###################################### RESULT FOR EQUITY METRICS WITHOUT SEX ######################################
+
+###################################### RESULT FOR EQUITY METRICS OF SEX WITHOUT SEX FEATURE #########################################################################
 
 ======== SVM ========
 
@@ -129,3 +131,275 @@ equal opportunity for female :  0.8802083333333334
 comparer les taux de faux positifs
 predictive equality for male :  0.22199170124481327
 predictive equality for female :  0.24702380952380953
+
+
+
+###################################### RESULT FOR EQUITY METRICS OF RACE WITH RACE FEATURE #####################################################################
+############################# SVM #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.7437810945273632
+Accuracy for g2 ( other races ) prediction :  0.7789613848202397
+Confusion matrix for male: 
+
+ [[499 159]
+ [150 398]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[393  88]
+ [ 78 192]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5381426202321725
+statistical parity for g2 ( other races ) confusion matrix : 0.6271637816245007
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.7583586626139818
+equal opportunity for g2 ( other races ) :  0.817047817047817
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.2737226277372263
+predictive equality for g2 ( other races ) :  0.28888888888888886
+
+############################# Random Forest #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.8175787728026535
+Accuracy for g2 ( other races ) prediction :  0.833555259653795
+Confusion matrix for male: 
+
+ [[558 100]
+ [120 428]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[428  53]
+ [ 72 198]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5621890547263682
+statistical parity for g2 ( other races ) confusion matrix : 0.6657789613848203
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8480243161094225
+equal opportunity for g2 ( other races ) :  0.8898128898128899
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.21897810218978103
+predictive equality for g2 ( other races ) :  0.26666666666666666
+
+############################# Gradient Boosting #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.7877280265339967
+Accuracy for g2 ( other races ) prediction :  0.8255659121171771
+Confusion matrix for male: 
+
+ [[536 122]
+ [134 414]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[422  59]
+ [ 72 198]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5555555555555556
+statistical parity for g2 ( other races ) confusion matrix : 0.6577896138482024
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8145896656534954
+equal opportunity for g2 ( other races ) :  0.8773388773388774
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.24452554744525548
+predictive equality for g2 ( other races ) :  0.26666666666666666
+
+############################# Ada Boost #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.8192371475953566
+Accuracy for g2 ( other races ) prediction :  0.8282290279627164
+Confusion matrix for male: 
+
+ [[560  98]
+ [120 428]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[420  61]
+ [ 68 202]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5638474295190713
+statistical parity for g2 ( other races ) confusion matrix : 0.6498002663115846
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.851063829787234
+equal opportunity for g2 ( other races ) :  0.8731808731808732
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.21897810218978103
+predictive equality for g2 ( other races ) :  0.2518518518518518
+
+
+
+
+###################################### RESULT FOR EQUITY METRICS OF RACE WITHOUT RACE FEATURE ######################################################################
+
+############################# SVM #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.7678275290215588
+Accuracy for g2 ( other races ) prediction :  0.7723035952063915
+Confusion matrix for male: 
+
+ [[519 139]
+ [141 407]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[390  91]
+ [ 80 190]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5472636815920398
+statistical parity for g2 ( other races ) confusion matrix : 0.625832223701731
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.7887537993920972
+equal opportunity for g2 ( other races ) :  0.8108108108108109
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.2572992700729927
+predictive equality for g2 ( other races ) :  0.2962962962962963
+
+############################# Random Forest #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.8150912106135987
+Accuracy for g2 ( other races ) prediction :  0.8308921438082557
+Confusion matrix for male: 
+
+ [[561  97]
+ [126 422]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[423  58]
+ [ 69 201]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5696517412935324
+statistical parity for g2 ( other races ) confusion matrix : 0.6551264980026631
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8525835866261399
+equal opportunity for g2 ( other races ) :  0.8794178794178794
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.22992700729927007
+predictive equality for g2 ( other races ) :  0.25555555555555554
+
+############################# Gradient Boosting #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.7844112769485904
+Accuracy for g2 ( other races ) prediction :  0.8175765645805593
+Confusion matrix for male: 
+
+ [[536 122]
+ [138 410]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[417  64]
+ [ 73 197]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5588723051409619
+statistical parity for g2 ( other races ) confusion matrix : 0.6524633821571239
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8145896656534954
+equal opportunity for g2 ( other races ) :  0.8669438669438669
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.2518248175182482
+predictive equality for g2 ( other races ) :  0.27037037037037037
+
+############################# Ada Boost #############################
+X train: [-0.93016394 -0.93016394 -0.93016394 ...  1.0750793  -0.93016394
+  1.0750793 ]
+
+==== Quality of the model ====
+Accuracy for g1 ( whites ) prediction :  0.8225538971807629
+Accuracy for g2 ( other races ) prediction :  0.8322237017310253
+Confusion matrix for male: 
+
+ [[565  93]
+ [121 427]] 
+
+Confusion matrix for g2 ( other races ) : 
+
+ [[422  59]
+ [ 67 203]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5688225538971807
+statistical parity for g2 ( other races ) confusion matrix : 0.6511318242343542
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8586626139817629
+equal opportunity for g2 ( other races ) :  0.8773388773388774
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.2208029197080292
+predictive equality for g2 ( other races ) :  0.24814814814814815
