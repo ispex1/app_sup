@@ -64,8 +64,8 @@ for s in states :
 
     print("=======",s,"========")
 
-    X_path = '~/Bureau/5A/app-sup/data/acsincome_' + s + '_features.csv'
-    y_path = '~/Bureau/5A/app-sup/data/acsincome_' + s + '_labels.csv'
+    X_path = '~/Bureau/5A/app_sup/data/acsincome_' + s + '_features.csv'
+    y_path = '~/Bureau/5A/app_sup/data/acsincome_' + s + '_labels.csv'
 
     for m, (name, model) in enumerate(models.items()):
         get_data(X_path, y_path, m, n)

@@ -80,9 +80,9 @@ models = {"SVM": sklearn.svm.SVC(C=1000, kernel="rbf", probability=True),
 
 
 
-X_path = '~/Bureau/5A/app-sup/data/acsincome_ca_features.csv'
-y_path = '~/Bureau/5A/app-sup/data/acsincome_ca_labels.csv'
-sex_path = '~/Bureau/5A/app-sup/data/acsincome_ca_group_Sex.csv'
+X_path = '~/Bureau/5A/app_sup/data/acsincome_ca_features.csv'
+y_path = '~/Bureau/5A/app_sup/data/acsincome_ca_labels.csv'
+sex_path = '~/Bureau/5A/app_sup/data/acsincome_ca_group_Sex.csv'
 
 for m, (name, model) in enumerate(models.items()):
     equities(X_path, y_path, sex_path, m, 0.05)
