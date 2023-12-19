@@ -158,5 +158,3 @@ Best index:  13
 Scorer:  <function _passthrough_scorer at 0x7fba6bae0720>
 Refit time:  0.33333754539489746
 Score:  0.7806122448979592
-
-The best score are ae

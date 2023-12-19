@@ -1,0 +1,122 @@
+======= ca ========
+
+==== SVM ====
+
+==== Quality of the model ====
+Accuracy:  0.8078691875319366
+Confusion matrix: 
+
+ [[967 172]
+ [204 614]] 
+
+
+==== Random Forest ====
+
+==== Quality of the model ====
+Accuracy:  0.8247317322432295
+Confusion matrix: 
+
+ [[985 154]
+ [189 629]] 
+
+
+==== Ada Boost ====
+
+==== Quality of the model ====
+Accuracy:  0.8226877874297394
+Confusion matrix: 
+
+ [[980 159]
+ [188 630]] 
+
+
+==== Gradient Boosting ====
+
+==== Quality of the model ====
+Accuracy:  0.828308635666837
+Confusion matrix: 
+
+ [[988 151]
+ [185 633]] 
+
+======= co ========
+
+==== SVM ====
+
+==== Quality of the model ====
+Accuracy:  0.7641328648993931
+Confusion matrix: 
+
+ [[2942  728]
+ [ 749 1843]] 
+
+
+==== Random Forest ====
+
+==== Quality of the model ====
+Accuracy:  0.7826572979878633
+Confusion matrix: 
+
+ [[3001  669]
+ [ 692 1900]] 
+
+
+==== Ada Boost ====
+
+==== Quality of the model ====
+Accuracy:  0.7928776748642606
+Confusion matrix: 
+
+ [[3020  650]
+ [ 647 1945]] 
+
+
+==== Gradient Boosting ====
+
+==== Quality of the model ====
+Accuracy:  0.7911210475886298
+Confusion matrix: 
+
+ [[3020  650]
+ [ 658 1934]] 
+
+======= ne ========
+
+==== SVM ====
+
+==== Quality of the model ====
+Accuracy:  0.7746870653685675
+Confusion matrix: 
+
+ [[1313  153]
+ [ 333  358]] 
+
+
+==== Random Forest ====
+
+==== Quality of the model ====
+Accuracy:  0.7839592025961984
+Confusion matrix: 
+
+ [[1301  165]
+ [ 301  390]] 
+
+
+==== Ada Boost ====
+
+==== Quality of the model ====
+Accuracy:  0.7918405192396848
+Confusion matrix: 
+
+ [[1291  175]
+ [ 274  417]] 
+
+
+==== Gradient Boosting ====
+
+==== Quality of the model ====
+Accuracy:  0.7955493741307371
+Confusion matrix: 
+
+ [[1292  174]
+ [ 267  424]] 
