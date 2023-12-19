@@ -1,0 +1,131 @@
+{"SVM": sklearn.svm.SVC(C=1000, kernel="rbf", probability=True),
+        "Random Forest": sklearn.ensemble.RandomForestClassifier(max_depth=10, n_estimators=1000),
+        "Gradient Boosting": sklearn.ensemble.GradientBoostingClassifier(learning_rate=1, max_depth=10,  n_estimators=100),
+        "Ada Boost": sklearn.ensemble.AdaBoostClassifier(learning_rate=1, n_estimators=1000)}
+
+
+###################################### RESULT FOR EQUITY METRICS WITHOUT SEX ######################################
+
+======== SVM ========
+
+==== Quality of the model ====
+Accuracy for male prediction :  0.7578947368421053
+Accuracy for female prediction :  0.7861842105263158
+Confusion matrix for male: 
+
+ [[442 121]
+ [132 350]] 
+
+Confusion matrix for female: 
+
+ [[461 115]
+ [ 80 256]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5492822966507177
+statistical parity for female confusion matrix : 0.5932017543859649
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.7850799289520426
+equal opportunity for female :  0.8003472222222222
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.27385892116182575
+predictive equality for female :  0.23809523809523808
+
+======== Random Forest ========
+
+==== Quality of the model ====
+Accuracy for male prediction :  0.8258373205741627
+Accuracy for female prediction :  0.8201754385964912
+Confusion matrix for male: 
+
+ [[486  77]
+ [105 377]] 
+
+Confusion matrix for female: 
+
+ [[490  86]
+ [ 78 258]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5655502392344498
+statistical parity for female confusion matrix : 0.6228070175438597
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8632326820603907
+equal opportunity for female :  0.8506944444444444
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.21784232365145229
+predictive equality for female :  0.23214285714285715
+
+======== Gradient Boosting ========
+
+==== Quality of the model ====
+Accuracy for male prediction :  0.7923444976076555
+Accuracy for female prediction :  0.7850877192982456
+Confusion matrix for male: 
+
+ [[461 102]
+ [115 367]] 
+
+Confusion matrix for female: 
+
+ [[482  94]
+ [102 234]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5511961722488038
+statistical parity for female confusion matrix : 0.6403508771929824
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8188277087033747
+equal opportunity for female :  0.8368055555555556
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.23858921161825727
+predictive equality for female :  0.30357142857142855
+
+======== Ada Boost ========
+
+==== Quality of the model ====
+Accuracy for male prediction :  0.815311004784689
+Accuracy for female prediction :  0.8333333333333334
+Confusion matrix for male: 
+
+ [[477  86]
+ [107 375]] 
+
+Confusion matrix for female: 
+
+ [[507  69]
+ [ 83 253]] 
+
+
+==== Statistical parity ====
+comparaisons des taux de prédictions positives
+statistical parity for male confusion matrix : 0.5588516746411484
+statistical parity for female confusion matrix : 0.6469298245614035
+
+==== Equal opportunity ====
+comparer les taux de vrais positifs
+equal opportunity for male :  0.8472468916518651
+equal opportunity for female :  0.8802083333333334
+
+==== Predictive equality ====
+comparer les taux de faux positifs
+predictive equality for male :  0.22199170124481327
+predictive equality for female :  0.24702380952380953
