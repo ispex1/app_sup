@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 import time
 
 # load the dataset
-X_all = pd.read_csv('~/Bureau/5A/app-sup/data/acsincome_ca_features.csv')
-y_all = pd.read_csv('~/Bureau/5A/app-sup/data/acsincome_ca_labels.csv')
+X_all = pd.read_csv('~/Bureau/5A/app_sup/data/acsincome_ca_features.csv')
+y_all = pd.read_csv('~/Bureau/5A/app_sup/data/acsincome_ca_labels.csv')
 
 # shuffle the data
 X_all, y_all = shuffle(X_all, y_all, random_state=1)
