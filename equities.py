@@ -24,8 +24,7 @@ def distribution(path) :
     print(repartition)
 
     plt.bar(name_possible_race, repartition.values())
-
-    plt.xlabel("race")
+    plt.xticks(rotation=90)
     plt.ylabel("amount")
     plt.show()
 
