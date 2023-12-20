@@ -60,10 +60,10 @@ def equities (X_path, y_path, etud_path, model, n, race):
     print("X train:", X_train[:,8])
 
     # Split between etud features
-    X_g1_train = [X_train[i] for i in range(X_train.shape[0]) if etud_train[i][0] == 1]
-    y_g1_train = [y_train['PINCP'].iat[i] for i in range(len(y_train)) if etud_train[i][0] == 1]
-    X_g2_train = [X_train[i] for i in range(X_train.shape[0]) if etud_train[i][0] != 1]
-    y_g2_train = [y_train['PINCP'].iat[i] for i in range(len(y_train)) if etud_train[i][0] != 1]
+    #X_g1_train = [X_train[i] for i in range(X_train.shape[0]) if etud_train[i][0] == 1]
+    #y_g1_train = [y_train['PINCP'].iat[i] for i in range(len(y_train)) if etud_train[i][0] == 1]
+    #X_g2_train = [X_train[i] for i in range(X_train.shape[0]) if etud_train[i][0] != 1]
+    #y_g2_train = [y_train['PINCP'].iat[i] for i in range(len(y_train)) if etud_train[i][0] != 1]
     X_g1_test = [X_test[i] for i in range(X_test.shape[0]) if etud_test[i][0] == 1]
     y_g1_test = [y_test['PINCP'].iat[i] for i in range(len(y_test)) if etud_test[i][0] == 1]
     X_g2_test = [X_test[i] for i in range(X_test.shape[0]) if etud_test[i][0] != 1]
@@ -122,10 +122,10 @@ def equities (X_path, y_path, etud_path, model, n, race):
     print("predictive equality for g2 (", "other races" if race else "female",") : ", pe_g2)
 
 
-models = {"SVM": sklearn.svm.SVC(C=1000, kernel="rbf", probability=True),
-        "Random Forest": sklearn.ensemble.RandomForestClassifier(max_depth=10, n_estimators=1000),
-        "Gradient Boosting": sklearn.ensemble.GradientBoostingClassifier(learning_rate=1, max_depth=10,  n_estimators=100),
-        "Ada Boost": sklearn.ensemble.AdaBoostClassifier(learning_rate=1, n_estimators=1000)}
+models = {"SVM": sklearn.svm.SVC(C=1, kernel="rbf", probability=True),
+          "Random Forest": sklearn.ensemble.RandomForestClassifier(max_depth=10, n_estimators=1000),
+          "Ada Boost": sklearn.ensemble.AdaBoostClassifier(learning_rate=1, n_estimators=1000),
+          "Gradient Boosting": sklearn.ensemble.GradientBoostingClassifier(learning_rate=1, max_depth=1,  n_estimators=1000)}
 
 #Path
 X_path_without_sex = './data/acsincome_ca_features_without_sex.csv'
